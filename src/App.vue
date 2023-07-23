@@ -55,6 +55,7 @@ function addNote() {
           class="card"
           v-for="userNote in notes"
           :style="{ backgroundColor: userNote.color }"
+          :id="userNote.id"
         >
           <p class="card-text">{{ userNote.text }}</p>
           <p class="card-date">
@@ -90,8 +91,7 @@ main {
   flex-direction: column;
   padding: 30px;
 }
-.module-text {
-}
+
 .module-button {
   padding: 10px;
   border: none;
@@ -111,6 +111,7 @@ main {
 .container {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 20px;
 }
 .container header {
   display: flex;
@@ -118,7 +119,6 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
 }
 
 .cards-container {
