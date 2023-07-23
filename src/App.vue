@@ -125,7 +125,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 10px 20px;
+  margin-top: 20px;
 }
 .card {
   display: flex;
@@ -153,5 +153,10 @@ main {
 }
 .module-error {
   color: red;
+}
+@media screen and (max-width: 460px) {
+  .cards-container {
+    justify-content: center;
+  }
 }
 </style>
